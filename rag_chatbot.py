@@ -1,5 +1,5 @@
 """
-RAG Chatbot sederhana pakai LangChain + Groq + ChromaDB (lokal)
+Asisten Pintar Keamanan Siber: chatbot RAG pakai LangChain + Groq + ChromaDB (lokal)
 
 Script ini adalah versi .py dari materi yang sudah dibedah di sesi LangChain:
 - Blok 1: Model, Prompt Template, Output Parser
@@ -294,7 +294,7 @@ def main():
     print("Merakit RAG chain...")
     rag_chain = buat_rag_chain(retriever, model, system_prompt)
 
-    print("\nRAG chatbot siap. Ketik pertanyaan, atau 'keluar' untuk berhenti.\n")
+    print("\nAsisten Pintar Keamanan Siber siap. Ketik pertanyaan, atau 'keluar' untuk berhenti.\n")
 
     while True:
         pertanyaan = input("Pertanyaan: ").strip()

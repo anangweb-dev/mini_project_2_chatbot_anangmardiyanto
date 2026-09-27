@@ -23,7 +23,7 @@ from rag_chatbot import (
 # Wajib jadi perintah Streamlit pertama: judul tab browser dan ikonnya.
 
 st.set_page_config(
-    page_title="Asisten Keamanan Cerdas",
+    page_title="Asisten Pintar Keamanan Siber",
     page_icon=":material/security:",
 )
 
@@ -324,7 +324,7 @@ with st.sidebar:
 st.markdown(
     """
     <div class="brand-lockup">
-        <div class="brand-mark" role="img" aria-label="Logo perisai dan kunci Asisten Keamanan Cerdas">
+        <div class="brand-mark" role="img" aria-label="Logo perisai dan kunci Asisten Pintar Keamanan Siber">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M32 5L53 13V28C53 41.5 44.4 52.2 32 59C19.6 52.2 11 41.5 11 28V13L32 5Z" fill="#14251F" stroke="#4FD1B0" stroke-width="2.5"/>
                 <path d="M24 29V24.5C24 20.1 27.6 16.5 32 16.5C36.4 16.5 40 20.1 40 24.5V29" stroke="#A9EAD7" stroke-width="3" stroke-linecap="round"/>
@@ -335,7 +335,7 @@ st.markdown(
         </div>
         <div class="brand-copy">
             <div class="app-eyebrow">PUSAT INFORMASI KEAMANAN</div>
-            <h1 class="app-title">Asisten Keamanan <span>Cerdas</span></h1>
+            <h1 class="app-title">Asisten Pintar <span>Keamanan Siber</span></h1>
         </div>
     </div>
     <p class="app-subtitle">Tanyakan hal seputar pencegahan malware, phishing, dan kepatuhan keamanan siber untuk bisnis.</p>
@@ -348,7 +348,7 @@ pertanyaan_pilihan = None
 if not st.session_state.riwayat:
     with st.chat_message("assistant"):
         st.markdown(
-            "Halo! Saya Asisten Keamanan Cerdas. Tanyakan topik seperti "
+            "Halo! Saya Asisten Pintar Keamanan Siber. Tanyakan topik seperti "
             "*langkah mencegah ransomware* atau *cara mengenali phishing*."
         )
     st.markdown('<div class="starter-label">Mulai dari topik populer</div>', unsafe_allow_html=True)
@@ -357,9 +357,9 @@ if not st.session_state.riwayat:
         ("Phishing", "Bagaimana cara mengenali dan mencegah serangan phishing?"),
         ("Ransomware", "Apa langkah pencegahan ransomware untuk bisnis?"),
         (
-            "Kepatuhan",
-            "Apa kewajiban perusahaan sebagai Pengendali Data Pribadi menurut UU PDP, "
-            "termasuk pemberitahuan jika terjadi kebocoran data?",
+            "UU PDP",
+            "Apa kewajiban perusahaan dalam melindungi data pribadi dan memberi tahu "
+            "pihak terkait jika terjadi kebocoran menurut UU PDP?",
         ),
     )
     for kolom, (label, teks_pertanyaan) in zip(kolom_topik, topik_awal):
